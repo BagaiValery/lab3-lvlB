@@ -44,6 +44,7 @@ public class MainFrame extends JFrame {
 	private JMenuItem saveToTextMenuItem;
 	private JMenuItem saveToGraphicsMenuItem;
 	private JMenuItem searchValueMenuItem;
+	@SuppressWarnings("unused")
 	private JMenuItem searchInfoMenuItem;
 	// Поля ввода для считывания значений переменных
 	private JTextField textFieldFrom;
@@ -55,6 +56,7 @@ public class MainFrame extends JFrame {
 	GornerTableCellRenderer();
 	// Модель данных с результатами вычислений
 	private GornerTableModel data;
+	@SuppressWarnings({ "serial", "deprecation" })
 	public MainFrame(Double[] coefficients) {
 	// Обязательный вызов конструктора предка
 	super("Табулирование многочлена на отрезке по схеме Горнера");
