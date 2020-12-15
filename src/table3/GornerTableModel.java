@@ -2,6 +2,7 @@ package table3;
 
 import javax.swing.table.AbstractTableModel;
 
+@SuppressWarnings("serial")
 public class GornerTableModel extends AbstractTableModel {
 	
 	private Double[] coefficients;
@@ -52,6 +53,7 @@ public class GornerTableModel extends AbstractTableModel {
 		return 3;
 	}
 
+	@SuppressWarnings("deprecation")
 	@Override
 	public int getRowCount() {
 		return new Double(Math.ceil((to-from)/step)).intValue()+1;

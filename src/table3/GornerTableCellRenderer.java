@@ -56,7 +56,7 @@ public class GornerTableCellRenderer implements TableCellRenderer {
 			if (col==1 && _int%2==0)panel.setBackground(Color.ORANGE);
 			else panel.setBackground(Color.WHITE);
 			
-			if (col==1 && needle!=null && needle.equals(formattedDouble)) {
+			if (col==0 && needle!=null && needle.equals(formattedDouble)) {
 			// Номер столбца = 1 (т.е. второй столбец)
 			// + иголка не null (т.е. мы что-то ищем)
 			// + значение иголки совпадает со значением ячейки таблицы -
